@@ -56,7 +56,7 @@ When asked to review a PRD, check for:
 
 - `docs/templates/` — Reusable document templates (don't modify these in PRD branches)
 - `docs/examples/` — Filled-in examples showing what good PRDs and decisions look like
-- `docs/` — Guides for humans: getting-started, workflow, writing-guide
+- `docs/` — Guides for humans: guide, workflow, writing
 - `prds/` — Active PRDs, one per file, named `YYYY-MM-DD_short-description.md`
 - `decisions/` — Decision records for key product and technical calls
 - `research/` — Supporting research, analysis, and interview notes
@@ -70,12 +70,27 @@ When asked to review a PRD, check for:
 
 ## Helping Users
 
+**First interaction:** If a user seems new or unsure, suggest they type `/guide` to see everything available.
+
 When a user asks to "set up", "get started", or "help me configure this repo":
 1. Check if `.claude/settings.local.json` exists with API keys configured
-2. Walk them through `docs/getting-started.md` step by step
-3. Offer to create their first PRD using the template in `docs/templates/prd-template.md`
+2. Walk them through `docs/guide.md` step by step
+3. Offer to create their first PRD using `/new-prd`
 
 When a user asks about the workflow, process, or "how does this work":
 - Reference `docs/workflow.md` for the full PRD lifecycle
-- Reference `docs/writing-guide.md` for writing guidance
+- Reference `docs/writing.md` for writing guidance
 - Point them to `docs/examples/` for concrete examples of good PRDs and decisions
+
+## Available Commands
+
+These slash commands are available to all users in this repo:
+
+| Command | Purpose |
+|---|---|
+| `/guide` | Onboarding — shows setup, workflow, and all commands |
+| `/new-prd` | Create a new PRD from the template |
+| `/new-decision` | Create a new decision record |
+| `/new-research` | Create a research brief with web research |
+| `/review-prd` | Review a PRD for completeness and quality |
+| `/jtbd-analysis` | Analyze a PRD using the Jobs-to-be-Done framework |

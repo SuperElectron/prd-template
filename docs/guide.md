@@ -6,8 +6,15 @@ How to set up this repo and start writing PRDs.
 
 ## Prerequisites
 
-- A GitHub account with access to this repo
-- [Claude Code](https://claude.ai/code) installed (optional but recommended)
+| Tool | Required? | Why | Install |
+|---|---|---|---|
+| **Git** | Yes | Clone the repo, create branches, open PRs | [git-scm.com](https://git-scm.com) (likely already installed) |
+| **Node.js** (v18+) | Yes, if using Claude Code | MCP servers and markdown linting run via `npx` | [nodejs.org](https://nodejs.org) |
+| **Claude Code** | Recommended | AI-assisted PRD writing, review, and research | `curl -fsSL https://claude.ai/install.sh \| bash` |
+
+**Without Claude Code:** You only need Git. Copy a template, write in any text editor, open a PR.
+
+**With Claude Code:** Install Node.js first, then Claude Code. Node.js powers the MCP servers (GitHub, web search, memory) and the markdown linter.
 
 ---
 
@@ -54,6 +61,10 @@ MCP servers give Claude access to external tools like GitHub, web search, and pe
 ```bash
 cp .claude/settings.local.json.example .claude/settings.local.json
 ```
+
+Get your tokens
+- visit github: https://github.com/settings/tokens
+- visit exa: https://dashboard.exa.ai/home
 
 Open `.claude/settings.local.json` and paste your keys:
 
@@ -109,4 +120,4 @@ Or work without Claude — copy a template and start writing:
 cp docs/templates/prd-template.md prds/2024-03-15_my-feature.md
 ```
 
-See [Workflow](./workflow.md) for the full process and [Writing Guide](./writing-guide.md) for how to write effective PRDs.
+See [Workflow](./workflow.md) for the full process and [Writing Guide](./writing.md) for how to write effective PRDs.

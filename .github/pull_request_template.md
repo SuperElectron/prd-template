@@ -42,4 +42,4 @@ _Brief description of what this document covers and why it matters._
 
 ---
 
-See [Workflow](docs/workflow.md) for merge process and [Writing Guide](docs/writing-guide.md) for how to write effective documents.
+See [Workflow](docs/workflow.md) for merge process and [Writing Guide](docs/writing.md) for how to write effective documents.
