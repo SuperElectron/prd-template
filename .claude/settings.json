@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_response.filePath // .tool_input.file_path' | { read -r f; echo \"$f\" | grep -qE '\\.md$' && npx --yes markdownlint-cli2 \"$f\" 2>&1 || true; }",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

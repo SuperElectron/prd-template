@@ -1,0 +1,15 @@
+prd:
+  - changed-files:
+    - any-glob-to-any-file: 'prds/**'
+
+decision:
+  - changed-files:
+    - any-glob-to-any-file: 'decisions/**'
+
+research:
+  - changed-files:
+    - any-glob-to-any-file: 'research/**'
+
+docs:
+  - changed-files:
+    - any-glob-to-any-file: 'docs/**'

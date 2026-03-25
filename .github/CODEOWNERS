@@ -1,0 +1,11 @@
+# PRDs require product + engineering review
+/prds/        @product-team @engineering-leads
+
+# Decisions require leads
+/decisions/   @product-team @engineering-leads
+
+# Research is more open
+/research/    @product-team
+
+# Templates and docs require maintainer review
+/docs/        @repo-maintainers

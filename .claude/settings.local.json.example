@@ -1,0 +1,9 @@
+{
+  "env": {
+    "GITHUB_TOKEN": "",
+    "EXA_API_KEY": ""
+  },
+  "permissions": {
+    "allow": ["Bash(gh api:*)"]
+  }
+}
